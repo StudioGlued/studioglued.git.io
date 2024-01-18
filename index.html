@@ -18,10 +18,9 @@
 			</div>
 			<div>
 				<ul class="nav-links">
+					<li><a href="#projects">Projects</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#experience">Experience</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -40,10 +39,9 @@
 		 			<span></span>
 				</div>  
 				<div class="menu-links">
+					<li><a href="#projects" onclick="togglemenu()">Projects</a></li>
 					<li><a href="#about" onclick="togglemenu()">About</a></li>
 					<li><a href="#experience" onclick="togglemenu()">Experience</a></li>
-					<li><a href="#projects" onclick="togglemenu()">Projects</a></li>
-					<li><a href="#contact" onclick="togglemenu()">Contact</a></li>
 				</div>
 			</div>
 		</nav>
@@ -112,6 +110,8 @@
 						</div>
 					</div>
 				</div>
+				<img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
+				onclick="location.href='#about'" />
 			</div>
 			
 		</section>
@@ -136,7 +136,7 @@
 						<div class="details-container">
 							<img src="./assets/experience.png" alt="Experience Icon" class="icon" />
 							<h3>Education</h3>
-							<p>BA Bachelors Desgree<br>Graphic Communications</p>
+							<p>BA Bachelors Degree<br>Graphic Communications</p>
 						</div>
 					</div>
 					<div class="text-container">
@@ -144,7 +144,7 @@
 					</div>
 				</div>
 				<img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
-				onclick="location.href='./#experience'" />
+				onclick="location.href='#experience'" />
 			</div>
 		</section>
 		<section id="experience">
@@ -193,8 +193,19 @@
 					</div>
 				</div>
 			</div>
-			<img src="./assets/arrow.png" alt="Arrow" class="arrow icon" onClick="location.href='./#projects'" />
 		</section>
+    	<footer>
+      		<nav>
+        		<div class="nav-links-container">
+          			<ul class="nav-links">
+            			<li><a href="#projects">Projects</a></li>
+            			<li><a href="#about">About</a></li>
+            			<li><a href="#experience">Experience</a></li>
+          			</ul>
+        		</div>
+      		</nav>
+      		<p>Copyright &#169; 2024 StudioGlued. All Rights Reserved.</p>
+    	</footer>
 		<script src="script.js"></script>
 	</body>
 </html>
