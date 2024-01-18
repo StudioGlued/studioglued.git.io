@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  		<title>StudioGlued</title>
+    	<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="mediaqueries.css">
+	</head>
+	<body>
+		<nav id="desktop-nav">
+			<div>
+				<ul class="logohead">
+					<div class="logo">Studio</div>
+					<div class="logo2">Glued</div>
+				</ul>
+			</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+	  
+		<nav id="hamburger-nav">
+	  		<div>
+				<ul class="logohead">
+					<div class="logo">Studio</div>
+					<div class="logo2">Glued</div>
+				</ul>
+			</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="togglemenu()">
+					<span></span>
+		 			<span></span>
+		 			<span></span>
+				</div>  
+				<div class="menu-links">
+					<li><a href="#about" onclick="togglemenu()">About</a></li>
+					<li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+					<li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+					<li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+				</div>
+			</div>
+		</nav>
+		<section id="profile">
+			<div class="section_pic-container">
+	  			<img src="./assets/gluedlogo-profile-pic.jpg" alt="Glued Profile Pic"/>
+	  		</div>
+			<div class="section_text">
+				<p class="section_text_p1">Hey! I'm</p>
+				<h1 class="title">Glued</h1>
+				<p class="section_text_p2">Graphic, Motion and UI/UX Designer</p>
+				<div class="socials-container">
+					<img src="./assets/linkedin.png" alt="Linkedin Icon" class="icon" onclick="location.href='https://www.linkedin.com/in/reiss-badhasha-90980a260/'">
+					<img src="./assets/insta.png" alt="Instagram Icon" class="icon" onclick="location.href='https://www.instagram.com/gluedstudio/'">
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<p class="section_text_p2">Get To Know More</p>
+			<h1 class="title">About Me</h1>
+			<div class="section-container">
+				<div class="section_pic-container">
+					<img src="./assets/profile-pic.png" alt="Profile Pic" class="about-pic" />
+				</div>
+				<div class="about-details-container">
+					<div class="about-containers">
+						<div class="details-container">
+							<img src="./assets/experience.png" alt="Experience Icon" class="icon" />
+							<h3>Experience</h3>
+							<p>3+ years<br>Graphic Design</p>
+						</div>
+						<div class="details-container">
+							<img src="./assets/experience.png" alt="Experience Icon" class="icon" />
+							<h3>Experience</h3>
+							<p>2+ years<br>Motion and UI/UX Design</p>
+						</div>
+						<div class="details-container">
+							<img src="./assets/experience.png" alt="Experience Icon" class="icon" />
+							<h3>Education</h3>
+							<p>BA Bachelors Desgree<br>Graphic Communications</p>
+						</div>
+					</div>
+					<div class="text-container">
+							<p>Random shite idk ill write some actual useful stuff in here later on. Likely something about how amazing and cool, but most importantly humble I am frfr. AD BREAK:SHREK Once upon a time there was a lovely princess. But she had an enchantment upon her of a fearful sort which could only be broken by love's first kiss. She was locked away in a castle guarded by a terrible fire-breathing dragon. Many brave knights had attempted to free her from this dreadful prison, but non prevailed. She waited in the dragon's keep in the highest room of the tallest tower for her true love and true love's first kiss. (laughs) Like that's ever gonna happen. What a load of - (toilet flush) Allstar - by Smashmouth begins to play. Shrek goes about his day. While in a nearby town, the villagers get together to go after the ogre. NIGHT - NEAR SHREK'S HOME MAN1 Think it's in there? MAN2 All right. Let's get it! MAN1 Whoa. Hold on. Do you know what that thing can do to you? MAN3 Yeah, it'll grind your bones for it's bread. Shrek sneaks up behind them and laughs.</p>
+					</div>
+				</div>
+				<img src="./assets/arrow.png" alt="Arrow" class="arrow icon"
+				onclick="location.href='./#experience'" />
+			</div>
+		</section>
+		<script src="script.js"></script>
+	</body>
+</html>
