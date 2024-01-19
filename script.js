@@ -4,3 +4,10 @@ function togglemenu() {
 	menu.classList.toggle("open")
 	icon.classList.toggle("open")
 }
+
+/* REMOVE SPLINE BADGE */
+
+window.onload = function() {
+        var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
+        shadowRoot.querySelector('#logo').remove();
+    }
