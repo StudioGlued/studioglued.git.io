@@ -26,22 +26,13 @@ else{
 }
 
 
-if (screen.width > 1200) {
-	
 	setTimeout(bruh, 200)
 	function bruh() {
         var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
         shadowRoot.querySelector('#logo').remove();
 	}
-}
-if (screen.width < 1200) {
-	
-	setTimeout(bruh2, 200)
-	function bruh2() {
-        var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
-        shadowRoot.querySelector('#logo').remove();
-	}
-}
+
+
 	
 
 
