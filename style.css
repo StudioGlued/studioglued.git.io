@@ -195,7 +195,10 @@ section {
 
 #moving-thing-mobile {
 	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 	height: 100vh;
+	margin-top: 5rem;
 }
 
 
