@@ -7,6 +7,16 @@
 		display: flex;
 	}
 }
+
+@media screen and (min-width: 1200px) {
+	#moving-thing {
+		display:block;
+	}
+	#moving-thing-mobile {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -28,6 +38,11 @@
   #hamburger-nav {
     display: flex;
   }
+	
+	#moving-thing {
+		display: none;
+	}
+	
   #experience,
   .experience-details-container {
     margin-top: 2rem;

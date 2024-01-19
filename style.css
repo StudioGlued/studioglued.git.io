@@ -189,6 +189,12 @@ section {
 
 #moving-thing {
 	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#moving-thing-mobile {
+	justify-content: center;
 	height: 100vh;
 }
 

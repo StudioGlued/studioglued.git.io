@@ -1,3 +1,6 @@
+
+
+
 function togglemenu() {
 	const menu = document.querySelector(".menu-links");
 	const icon = document.querySelector(".hamburger-icon");
@@ -7,7 +10,38 @@ function togglemenu() {
 
 /* REMOVE SPLINE BADGE */
 
-window.onload = function() {
+if (screen.width < 1200) {
+	window.onload = function addCode() {
+				document.getElementById("moving2")
+					.innerHTML +=
+						'<spline-viewer url="https://prod.spline.design/jnY4iVXV1tofOqTa/scene.splinecode"></spline-viewer>';
+					}
+}
+else{
+	window.onload = function addCode() {
+				document.getElementById("moving1")
+					.innerHTML +=
+						'<spline-viewer url="https://prod.spline.design/tK12fHnNHmo46tvc/scene.splinecode"></spline-viewer>';
+					}
+}
+
+
+if (screen.width > 1200) {
+	
+	setTimeout(bruh, 200)
+	function bruh() {
         var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
         shadowRoot.querySelector('#logo').remove();
-    }
+	}
+}
+if (screen.width < 1200) {
+	
+	setTimeout(bruh2, 200)
+	function bruh2() {
+        var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
+        shadowRoot.querySelector('#logo').remove();
+	}
+}
+	
+
+
