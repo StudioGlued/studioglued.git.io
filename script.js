@@ -1,3 +1,6 @@
+
+
+
 function togglemenu() {
 	const menu = document.querySelector(".menu-links");
 	const icon = document.querySelector(".hamburger-icon");
@@ -21,9 +24,22 @@ else{
 						'<spline-viewer url="https://prod.spline.design/tK12fHnNHmo46tvc/scene.splinecode"></spline-viewer>';
 					}
 }
+
+
+	setTimeout(bruh, 400)
+	function bruh() {
+        var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
+        shadowRoot.querySelector('#logo').remove();
+	}
+
+
+	setTimeout(bruh, 1500)
+	function bruh() {
+        var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
+        shadowRoot.querySelector('#logo').remove();
+	}
+
+
 	
-settimeout (bruh, 2000);
-function bruh() {
-	var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
-	shadowRoot.querySelector('#logo').remove();
-}	
+
+
