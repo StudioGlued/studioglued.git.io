@@ -1,6 +1,3 @@
-
-
-
 function togglemenu() {
 	const menu = document.querySelector(".menu-links");
 	const icon = document.querySelector(".hamburger-icon");
@@ -30,7 +27,7 @@ else{
 						'<spline-viewer url="https://prod.spline.design/tK12fHnNHmo46tvc/scene.splinecode"></spline-viewer>';
 					}
 	settimeout (4000){
-		window.onload = function() {
+		function() {
 			var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
 			shadowRoot.querySelector('#logo').remove();
 		}	
