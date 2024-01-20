@@ -22,8 +22,13 @@ else{
 					}
 }
 	
-settimeout(bruh, 4000);
+const interval = setinterval(bruh, 4000);
 function bruh() {
 	var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
 	shadowRoot.querySelector('#logo').remove();
 }	
+
+settimeout(stopping, 10000);
+function stopping() {
+	clearinterval(interval);
+	}
