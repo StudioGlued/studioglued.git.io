@@ -13,12 +13,11 @@ if (screen.width < 1200) {
 					.innerHTML +=
 						'<spline-viewer url="https://prod.spline.design/jnY4iVXV1tofOqTa/scene.splinecode"></spline-viewer>';
 					}
-	settimeout (4000){
-		function() {
+	settimeout (bruh1, 4000);
+		function bruh1() {
 			var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
 			shadowRoot.querySelector('#logo').remove();
 		}
-	}
 }
 else{
 	window.onload = function addCode() {
@@ -26,10 +25,9 @@ else{
 					.innerHTML +=
 						'<spline-viewer url="https://prod.spline.design/tK12fHnNHmo46tvc/scene.splinecode"></spline-viewer>';
 					}
-	settimeout (4000){
-		function() {
-			var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
-			shadowRoot.querySelector('#logo').remove();
-		}	
-	}
+	settimeout (bruh2, 4000);
+	function bruh2() {
+		var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
+		shadowRoot.querySelector('#logo').remove();
+	}	
 }
