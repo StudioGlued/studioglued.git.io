@@ -26,8 +26,8 @@ else{
 }
 
 
-setTimeout(bruh, 4000) {
-	function bruh() {
+setTimeout(4000) {
+	function() {
 		var shadowRoot = document.querySelector('spline-viewer').shadowRoot;
 		shadowRoot.querySelector('#logo').remove();
 	}
