@@ -18,7 +18,7 @@ html {
 }
 
 p {
-	color: dimgrey;
+	color: rgba(40,40,40,1.00);
 }
 
 body{
@@ -31,16 +31,14 @@ body{
 div{
 }
 
-section{
-}
 
 #hero{
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 95vh;
-	width: 95vw;
+	height: 100vh;
+	width: 100vw;
 	
 }
 
@@ -51,8 +49,10 @@ section{
 button{
 	border: solid 2px rgba(40,40,40,1.00);
 	border-radius: 30px;
-	padding: 15px 20px;
-	transition: all 300ms ease
+	padding: 15px 30px;
+	transition: all 300ms ease;
+	margin: 5vh;
+	background: white;
 }
 
 button:hover{
