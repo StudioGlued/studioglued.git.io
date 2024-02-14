@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  		<title>StudioGlued</title>
+    	<link rel="stylesheet" href="style2.css">
+		<link rel="stylesheet" href="mediaqueries.css">
+	</head>
+	<body>
+		<section id="section-1">
+			<nav id="desktop-nav">
+				<div>
+					<ul class="logohead" onClick="location.href='https://glued.studio/'">
+						<div class="logo">Studio</div>
+						<div class="logo2">Glued</div>
+					</ul>
+				</div>
+			</nav>
+			<section id="profile">
+				<div class="section_pic-container">
+					<img src="./assets/gluedlogo-profile-pic.jpg" alt="Glued Profile Pic"/>
+				</div>
+				<div class="section_text">
+					<p class="section_text_p1">Hey! I'm</p>
+					<h1 class="title">Glued</h1>
+					<p class="section_text_p2">Graphic, Motion and UI/UX Designer</p>
+					<div class="socials-container">
+						<img src="./assets/linkedin.png" alt="Linkedin Icon" class="icon" onclick="location.href='https://www.linkedin.com/in/reiss-badhasha-90980a260/'">
+						<img src="./assets/insta.png" alt="Instagram Icon" class="icon" onclick="location.href='https://www.instagram.com/gluedstudio/'">
+					</div>
+				</div>
+			</section>
+		</section>
+		<section id="section-2">
+			<div class="section_pic-container">
+	  			<img src="./assets/gluedlogo-profile-pic.jpg" alt="Glued Profile Pic"/>
+	  		</div>
+			<div class="section_text">
+				<p class="section_text_p1">Hey! I'm</p>
+				<h1 class="title">Glued</h1>
+				<p class="section_text_p2">Graphic, Motion and UI/UX Designer</p>
+				<div class="socials-container">
+					<img src="./assets/linkedin.png" alt="Linkedin Icon" class="icon" onclick="location.href='https://www.linkedin.com/in/reiss-badhasha-90980a260/'">
+					<img src="./assets/insta.png" alt="Instagram Icon" class="icon" onclick="location.href='https://www.instagram.com/gluedstudio/'">
+				</div>
+			</div>
+		</section>
+		<footer>
+      		<p id="f">Copyright &#169; 2024 StudioGlued. All Rights Reserved.</p>
+    	</footer>
+		<script>
+			function togglemenu() {
+			const menu = document.querySelector(".menu-links");
+			const icon = document.querySelector(".hamburger-icon");
+			menu.classList.toggle("open")
+			icon.classList.toggle("open")
+		}
+		</script> 
+	</body>
+</html>
