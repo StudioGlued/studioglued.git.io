@@ -1,4 +1,8 @@
 @media screen and (max-width: 1000px) {
+
+	body {
+		cursor:auto;
+	}
 	
 	#profile {
     height: 100vh;
@@ -9,9 +13,10 @@
 	
 
 .section_pic-container {
-    width: 100vw;
     height: 46vw;
+	width: 100%;
     justify-content: center;
+	margin-bottom: 3rem;
   }
 
   .about-containers {
@@ -21,6 +26,12 @@
   #projects {
     height: fit-content;
   }
+	
+	.circle {
+		display: none;
+	}
+	
+
 	
 }
 

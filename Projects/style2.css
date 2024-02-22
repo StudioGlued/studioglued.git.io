@@ -10,20 +10,55 @@ padding: 0;
 body {
 	font-family: 'Playfair Display', serif;
 	font-family: 'Poppins', sans-serif;
+	background: rgba(20,20,20,1.00);
+	cursor: none;
 }
 
 html {
 	scroll-behavior: smooth;
 }
 
+
 p {
-	color: dimgrey;
+	color: rgba(200,200,200,1.00);
 }
 
 section{
 	position: relative;
 	box-sizing: border-box;
 	min-height: fit-content;
+}
+/* scrollbar*/
+body::-webkit-scrollbar {
+  width: 15px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(20,20,20,1.00);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;    /* color of the scroll thumb */
+  border-radius: 200px;       /* roundness of the scroll thumb */
+  border: 4px solid rgba(20,20,20,1.00);  /* creates padding around scroll thumb */
+}
+/* MOUSE CURSOR FOLLOWER */
+
+
+.circle {
+ 	--circle-size: 40px;
+	--border-size: 1px;
+	--color: white;
+	position: fixed;
+	z-index: 500;
+  	height: var(--circle-size);
+  	width: var(--circle-size);
+  	border: var(--border-size) solid var(--color);
+  	border-radius: 100%;
+  	top: calc(var(--circle-size) / 2 * -1);
+  	left: calc(var(--circle-size) / 2 * -1);
+  	pointer-events: none;
+	
 }
 
 
@@ -38,41 +73,46 @@ section{
 nav{
 	display: flex;
 	position: sticky;
-	margin: -6vh;
+	margin: 0vh;
 	z-index: 20;
 	justify-content: center;
 	align-items: center;
 	height: 12vh;
+
 	/* border: solid 5px black;
 	border-radius: 20px; */
 	top:0;
 	left:0;
 	right:0;
-	background: white;
+	background: rgba(20,20,20,1.00);
 	transition: all 400ms ease-in-out;
 }
 
 .logohead {
 	display: flex;
 	align-content: center;
+	--font-size: 3rem;
+	font-size: var(--font-size);
 }
 
 .logohead:hover {
-	cursor: pointer;
 	width: fit-content;
+	--font-size: 3.4rem;
+	transition: all 100ms ease-in-out;
 }
 
 .logo {
-	font-size: 3rem;
 	font-weight: 600;
 	font-family: 'Playfair Display';
+	color: rgba(200,200,200,1.00);
+	transition: all 200ms ease-in-out;
 }
 
 .logo2 {
-	font-size: 3rem;
 	font-weight: 800;
 	font-family: 'Poppins';
-	color: rgba(60,60,60,1.00);
+	color: rgba(255,255,255,1.00);
+	transition: all 200ms ease-in-out;
 }
 
 
@@ -82,6 +122,8 @@ nav{
 	display: flex;
 	justify-content: center;
 	height: 100vh;
+	background: rgba(20,20,20,1.00);
+	bottom: 12vh;
 	
 }
 
@@ -113,24 +155,62 @@ nav{
 .title {
 	font-size: 3rem;
 	text-align: center;
+	color: white;
 }
 
 #socials-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 1rem;
-	gap: 1rem;
+	align-items: center; 
 }
 
 .icon {
-	cursor: pointer;
+	padding-top: 1rem; 
 	height: 2rem;
-	margin-top: 1rem;
+	transition: all 200ms ease-in-out;
+}
+
+.icon:hover {
+	height: 3rem;
+	transition: all 200ms ease-in-out;
+
 }
 
 /* SECTION 2 */
+#warning-section {
+	display: flex;
+	height: 20vh;
+	justify-content: center;
+	background-color: white;
+	
+}
+
+#warning {
+	display: flex;
+	position: absolute;
+	z-index: 22;
+	justify-content: center;
+	align-items: center;
+	height: 12vh;
+	/* border: solid 5px black;
+	border-radius: 20px; */
+	top:0;
+	left:0;
+	right:0;
+	transition: all 400ms ease-in-out;
+}
+.site-warning {
+	color: rgba(20,20,20,1.00);
+}
 
 
+/* SECTION 2 */
+
+#projects {
+	display: flex;
+	height: 100vh;
+	background: rgba(20,20,20,1.00);
+}
 /* FOOTER */
 
 footer{
@@ -138,6 +218,6 @@ footer{
 	height: 10vh;
 	justify-content: center;
 	align-items: center;
-	background: rgba(30,30,30,1.00);
+	background: rgba(20,20,20,1.00);
 	margin-top: 5vh;
 }
