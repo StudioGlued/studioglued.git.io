@@ -4,10 +4,6 @@
 		cursor:auto;
 	}
 	
-	#section-1{
-		margin-bottom: 20vh;
-	}
-	
 	#profile {
     height: 100vh;
     margin-bottom: 6rem;
@@ -41,7 +37,7 @@
 		font-weight: 1000;
 		flex-wrap: wrap;
 
-}
+	}
 	
 }
 
