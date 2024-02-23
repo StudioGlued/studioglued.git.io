@@ -24,7 +24,7 @@ body{
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	height:100vh;
+	height: 100vh;
 }
 
 div{
@@ -32,22 +32,23 @@ div{
 
 
 #hero{
+	width: 80vw;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
-	width: 100vw;
 	
 }
 
 #animation{
-	height: 75vh;
-	color: white
+	display:flex;
+	color: white;
 	}
 
 .spline1 {
-	width:80vw;
+}
+
+.spline1viewer {
 }
 
 button{
