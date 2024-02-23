@@ -1,0 +1,37 @@
+@media screen and (max-width: 1000px) {
+
+	body {
+		cursor:auto;
+	}
+	
+	#section-1{
+		margin-bottom: 30vh;
+	}
+	
+	#profile {
+    height: 100vh;
+    margin-bottom: 6rem;
+	display: block;
+	padding-top: 24vh;
+  }
+	
+
+.section_pic-container {
+    height: 46vw;
+	width: 100%;
+    justify-content: center;
+	margin-bottom: 3rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+	
+	.circle {
+		display: none;
+	}
+	
+
+	
+}
+
