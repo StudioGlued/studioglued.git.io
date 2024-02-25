@@ -4,48 +4,91 @@
 		<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	  		<title>StudioGlued</title>
-    	<link rel="stylesheet" href="styles.css">
+	  		<title>test</title>
+    	<link rel="stylesheet" href="style2.css">
 		<link rel="stylesheet" href="mediaqueries.css">
-		<link rel="subsection" href="./Home/">
 	</head>
 	<body>
-		<section id="hero">
-			<div id="animation">
-				<div id="blank"><img src="./loading.gif" id="gif" alt="Loading"/></div>
-				<script class="spline1" type="module" src="https://unpkg.com/@splinetool/viewer@1.0.31/build/spline-viewer.js"></script>
-				<spline-viewer class="spline1" class="spline1viewer" url="https://prod.spline.design/jnY4iVXV1tofOqTa/scene.splinecode"></spline-viewer>
-			</div>
-			<button onClick="location.href='./Home/'">
-				<p>View Site</p>
-			</button>
+		<div class="circle"></div>
+		<section class="splash">
+			<img src="./assets/gluedlogo-orange.png" id="splash-image" draggable="false" alt="Glued Profile Pic"/>
 		</section>
-		
-		
-		<script>
-		/* REMOVE SPLINE BADGE */
-		window.onload = function() {
-		  var splineElement = document.querySelectorAll('spline-viewer');
-		  
-		  for (let pas = 0; pas < splineElement.length; pas++) {
-		    var shadowRoot = splineElement[pas].shadowRoot;
-		    shadowRoot.querySelector('#logo').remove();
-		  }
-		}
-		const endTransition = () => {
-			const loader = document.querySelector(".loader");
-			loader.addEventListener("transitionend", () => {
-				loader.style.transform = "translateX(0%)";
-				root.classList.remove("disable-hover");
-			});
-			loader.style.transform = "";
-		};
-
-		const startTransition = () => {
-			const loader = document.querySelector(".loader");
-			loader.style.transform = "translateX(100%)";
-			appRoot.dataset.route = "a";
-		};
-		</script> 
+		<section id="hero">
+			<div>
+				<img class="image background" src="./assets/gluedlogo-cream.png" draggable="false" />
+			</div>
+			<nav id="desktop-nav">
+				<div class="desktop-nav">
+					<ul class="logohead hoverable" onClick="window.open('https://glued.studio/')">
+						<div class="logo">Glued</div>
+						<div class="logo2">Studio</div>
+						
+					</ul>
+				</div>
+				<div>
+					<div class="work-head">
+						<div class="work-nav hoverable" onClick="location.href='#about'">ABOUT</div>
+						<div class="work-nav hoverable" onClick="location.href='#projects'">PROJECTS</div>
+					</div>
+				</div>
+			</nav>
+			<section id="profile">
+				<div class="section_pic-container">
+					<div class="block1"></div>
+					<div class="block2"></div>
+					<div class="block3"></div>
+				</div>
+				<div class="section_text">
+					<p class="section_text_p1">I'M</p>
+					<h1 class="title hoverable" onClick="window.open('https://www.instagram.com/gluedstudio/')">REISS</h1>
+					<p class="section_text_p2">TOO</p>
+			</div>
+			</section>
+			<div class="arrow"><img src="./assets/arrow.png" alt="Down Arrow"/></div>
+		</section>
+		<div id="warning">
+			<p class="site-warning">work in progress...</p>
+			<p class="site-warning-2">I'm coding this from scratch, so bare with me (:</p>
+			<script class="spline1" type="module" src="https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js"></script>
+			<spline-viewer class="spline1" url="https://prod.spline.design/mrjajiAlizRMGbZY/scene.splinecode"></spline-viewer>
+		</div>
+		<section id="about">
+			<section class="about-section-title">
+				<div>
+					<h1 class="about-title">MR STUDIO?</h1>
+					<h1 class="about-sub">who the $@!%! is this guy?!</h1>
+				</div>
+			</section>
+			<section class="about-section-1">
+				<p class="about-s-p1">I'm Reiss!</p>
+			</section>
+		</section>
+		<section id="projects">
+			<div class="projects-header">
+				<p class="projects-title"># PRJS&nbsp; #</p>
+		</div>
+			<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+			  <img class="image hoverable" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" onclick="window.open.new(location.href='https://glued.studio/')" />
+			  <img class="image hoverable" src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" draggable="false" onclick="window.open(location.href='https://glued.studio/')" />
+			  <img class="image hoverable" src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" onclick="window.open(location.href='https://glued.studio/')" />
+			  <img class="image hoverable" src="https://images.unsplash.com/photo-1495805442109-bf1cf975750b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" onclick="window.open(location.href='https://glued.studio/')" />
+			  <img class="image hoverable" src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" onclick="window.open(location.href='https://glued.studio/')" />
+			  <img class="image hoverable" src="https://images.unsplash.com/photo-1496753480864-3e588e0269b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2134&q=80" draggable="false" onclick="window.open(location.href='https://glued.studio/')" />
+			  <img class="image hoverable" src="https://images.unsplash.com/photo-1613346945084-35cccc812dd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1759&q=80" draggable="false" onclick="window.open(location.href='https://glued.studio/')" />
+			  <img class="image hoverable" src="https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" onclick="window.open(location.href='https://glued.studio/')" />
+			</div>
+		</section>
+		<script class="spline1" type="module" src="https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js"></script>
+		<spline-viewer class="spline1" url="https://prod.spline.design/mrjajiAlizRMGbZY/scene.splinecode"></spline-viewer>
+		<footer>
+			<section class="footer-container">
+				<p id="f">&#169; StudioGlued 2024</p>
+				<div class="socials-container">
+					<img src="./assets/linkedin-dark.png" alt="Linkedin Icon" class="icon hoverable" onClick="window.open('https://www.linkedin.com/in/reiss-badhasha-90980a260/')">
+					<img src="./assets/insta-dark.png" alt="Instagram Icon" class="icon hoverable" onClick="window.open('https://www.instagram.com/gluedstudio/')">
+				</div>
+			</section>
+		</footer>
+		<script src="script.js"></script> 
 	</body>
 </html>
