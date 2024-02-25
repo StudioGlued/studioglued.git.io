@@ -28,6 +28,7 @@ p {
 
 section{
 	position: relative;
+	overflow-x: hidden;
 }
 
 img {
