@@ -172,7 +172,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .work-head {
 	display: flex;
-	position: absolute;
+	position: fixed;
 	right: 8%;
 	height: 12vh;
 	align-items: center;
@@ -197,6 +197,9 @@ body::-webkit-scrollbar-thumb:hover {
 	--font-size: 3rem;
 	font-size: var(--font-size);
 	transition: all 10s ease-in;
+	background-color:  rgba(20,20,20,0.9);
+	border-radius: 25px;
+	padding: 10px;
 }
 
 .logohead:hover {
@@ -330,15 +333,16 @@ body::-webkit-scrollbar-thumb:hover {
 	position: fixed;
 	z-index: -100;
 	top: 100%;
+	font-family: Montserrat;
 	font-size: 5rem;
-	font-weight: 800;
+	font-weight: 1000;
 	animation: parallax ease-in;
 	animation-timeline: scroll();
 
 }
 
 .site-warning-2 {
-	color: white;
+	color: #ffd966;
 	position: fixed;
 	z-index: -100;
 	top: 108%;
@@ -350,13 +354,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 @keyframes parallax {
 	to {
-		transform: translateY(-190vh);
+		transform: translateY(-900vh);
 	}
 }
 
 @keyframes parallax-2 {
 	to {
-		transform: translateY(-185vh);
+		transform: translateY(-900vh);
 	}
 }
 
@@ -492,4 +496,8 @@ footer {
 	z-index: -101;
 	top: 30vh;
 	height: 100vh;
+}
+
+.spline-container {
+	width: 100vw;
 }
