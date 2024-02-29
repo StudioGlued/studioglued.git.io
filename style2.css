@@ -14,8 +14,8 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Kanit', sans-serif;
 	cursor: none;
-	background-color: rgb(20,20,20);
 	overflow-x: hidden;
+	background-color: #FFF2CC;
 }
 
 html {
@@ -260,11 +260,12 @@ body::-webkit-scrollbar-thumb:hover {
 	position: relative;
 	left: 10px;
 	display: inline-block;
+	width: 520px;
 }
 
 .section_text_p1 {
 	position: relative;
-	top: 53px;
+	top: 66px;
 	font-size: 150px;
 	font-family: 'Montserrat';
 	font-weight: 1000;
@@ -274,7 +275,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .section_text_p2 {
 	position: relative;
-	bottom: 56px;
+	bottom: 69px;
 	font-size: 150px;
 	font-family: 'Montserrat';
 	font-weight: 1000;
@@ -284,12 +285,16 @@ body::-webkit-scrollbar-thumb:hover {
 
 .title {
 	position: relative;
+	height: 184px;
+	top: 8px;
 	font-size: 150px;
+	letter-spacing: 10px;
 	font-family: 'Montserrat';
 	font-weight: 1000;
 	margin: 0;
 	color: #FFF2CC;
 }
+
 
 .arrow{
 	display: flex;
@@ -317,39 +322,29 @@ body::-webkit-scrollbar-thumb:hover {
 /* WARNING */
 
 #warning {
-	display: flex;
-	justify-content: center;
-}
-
-.spline1 {
+	display: block;
 	position: fixed;
-	z-index: -101;
-	top:30vh;
-	height: 110vh;
+	text-align: center;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	z-index: -100;
+	top: 100%;
+	animation: parallax ease-in;
+	animation-timeline: scroll();
 }
 
 .site-warning {
 	color: #e69138ff;
-	position: fixed;
-	z-index: -100;
-	top: 100%;
 	font-family: Montserrat;
 	font-size: 5rem;
 	font-weight: 1000;
-	animation: parallax ease-in;
-	animation-timeline: scroll();
-
 }
 
 .site-warning-2 {
-	color: #ffd966;
-	position: fixed;
-	z-index: -100;
-	top: 108%;
+	color: rgb(20,20,20);
 	font-size: 1.5rem;
 	font-weight: 600;
-	animation: parallax-2 ease-in;
-	animation-timeline: scroll();
 }
 
 @keyframes parallax {
@@ -375,11 +370,17 @@ body::-webkit-scrollbar-thumb:hover {
 	background: rgba(20,20,20,1.00);
 	padding-left: 15%;
 	padding-right: 15%;
+	
 }
 
-.about-section-title{
+.abt-s-cont {
 	position: relative;
 	top: 30vh;
+}
+
+.about-section-title {
+	position: relative;
+
 }
 
 .about-title {
@@ -387,7 +388,7 @@ body::-webkit-scrollbar-thumb:hover {
 	font-size: 150px;
 	font-family: 'Montserrat';
 	font-weight: 1000;
-	color: #e69138
+	color: #e69138;
 }
 
 .about-sub {
@@ -395,6 +396,25 @@ body::-webkit-scrollbar-thumb:hover {
 	bottom: 15px;
 	font-size: 50px;
 	font-family: 'Playfair Display';
+	font-weight: 100;
+	color: #FFF2CC;
+}
+
+.about-section-1 {
+	display: flex;
+	justify-content: center;
+}
+
+.about-container-1 {
+	display: block;
+	justify-content: center;
+}
+
+.about-s-p1 {
+	position: relative;
+	bottom: 15px;
+	font-size: 50px;
+	font-family: 'Montserrat';
 	font-weight: 100;
 	color: #FFF2CC;
 }
@@ -424,7 +444,7 @@ body::-webkit-scrollbar-thumb:hover {
 .projects-title {
 	font-size: 5rem;
 	font-weight: 800;
-	color: rgba(255,255,255,1);
+	color: #e69138;
 }
 
 
@@ -492,12 +512,13 @@ footer {
 }
 
 .spline1 {
-	position: fixed;
-	z-index: -101;
-	top: 30vh;
-	height: 100vh;
+	height: 40vh;
 }
 
 .spline-container {
 	width: 100vw;
+	position: absolute;
+	z-index: -101;
+	height: 15vh;
+	overflow-y: hidden;
 }

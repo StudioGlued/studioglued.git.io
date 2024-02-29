@@ -40,7 +40,7 @@
 				</div>
 				<div class="section_text">
 					<p class="section_text_p1">I'M</p>
-					<h1 class="title hoverable" onClick="window.open('https://www.instagram.com/gluedstudio/')">REISS</h1>
+					<p class="title hoverable auto-type" onClick="window.open('https://www.instagram.com/gluedstudio/')"><p>
 					<p class="section_text_p2">TOO</p>
 			</div>
 			</section>
@@ -49,23 +49,26 @@
 		<div id="warning">
 			<p class="site-warning">work in progress...</p>
 			<p class="site-warning-2">I'm coding this site from scratch, so bare with me</p>
-			<script class="spline1" type="module" src="https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js"></script>
-			<spline-viewer class="spline1" url="https://prod.spline.design/mrjajiAlizRMGbZY/scene.splinecode"></spline-viewer>
 		</div>
 		<section id="about">
-			<section class="about-section-title">
-				<div>
-					<h1 class="about-title">ME</h1>
-					<h1 class="about-sub">who the $@!%! is this guy?!</h1>
-				</div>
-			</section>
-			<section class="about-section-1">
-				<p class="about-s-p1">I'm Reiss!</p>
+			<section class="abt-s-cont">
+				<section class="about-section-title">
+					<div>
+						<h1 class="about-title">ME</h1>
+						<h1 class="about-sub">who the $@!%! is this guy?!</h1>
+					</div>
+				</section>
+				<section class="about-section-1">
+					<section class="about-container-1">
+						<p class="about-s-p1">I'm Reiss!</p>
+						<p class="about-s-p2">Born in Essex UK, Reiss is a graphic and motion designer, always looking to push the limits of . </p>
+					</section>
+				</section>
 			</section>
 		</section>
 		<section id="projects">
 			<div class="projects-header">
-				<p class="projects-title"># PRJS&nbsp; #</p>
+				<p class="projects-title">PROJECTS</p>
 		</div>
 			<div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
 			  <img class="image hoverable" src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" onclick="window.open.new(location.href='https://glued.studio/')" />
@@ -78,10 +81,7 @@
 			  <img class="image hoverable" src="https://images.unsplash.com/photo-1516681100942-77d8e7f9dd97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" onclick="window.open(location.href='https://glued.studio/')" />
 			</div>
 		</section>
-		<section class="spline-container">
-			<script class="spline1" type="module" src="https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js"></script>
-			<spline-viewer class="spline1" url="https://prod.spline.design/mrjajiAlizRMGbZY/scene.splinecode"></spline-viewer>
-		</section>
+
 		<footer>
 			<section class="footer-container">
 				<p id="f">&#169; StudioGlued 2024</p>
@@ -90,7 +90,20 @@
 					<img src="./assets/insta-dark.png" alt="Instagram Icon" class="icon hoverable" onClick="window.open('https://www.instagram.com/gluedstudio/')">
 				</div>
 			</section>
+			<section class="spline-container">
+				<script class="spline1" type="module" src="https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js"></script>
+				<spline-viewer class="spline1" url="https://prod.spline.design/mrjajiAlizRMGbZY/scene.splinecode"></spline-viewer>
+			</section>
 		</footer>
 		<script src="script.js"></script> 
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+		<script>
+			var typed = new Typed('.auto-type', {
+			  strings: ['REISS', 'GLUED'],
+			  typeSpeed: 150,
+			  backSpeed: 150,
+			  loop: true
+			});
+		  </script>
 	</body>
 </html>

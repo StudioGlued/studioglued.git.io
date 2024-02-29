@@ -157,12 +157,9 @@ elements.forEach((item) => {
 
 
 
-const maintitle = document.querySelector('.title');
 
-maintitle.addEventListener('mouseover', () => { 
-  maintitle.innerHTML = 'GLUED';
-});
 
-maintitle.addEventListener('mouseout', () => { 
-  maintitle.innerHTML = 'REISS';
-});
+
+
+
+
