@@ -9,38 +9,13 @@ padding: 0;
 }
 
 body {
-	--orange:#e69138;
-	--black: rgba(20,20,20,1.00);
-	--yellow: rgba(255,217,102,1);
-	--cream: #FFF2CC;
 	font-family: 'Playfair Display', serif;
 	font-family: 'Poppins', sans-serif;
 	font-family: 'Montserrat', sans-serif;
 	font-family: 'Kanit', sans-serif;
 	cursor: none;
 	overflow-x: hidden;
-	background-color: var(--orange);
-	animation: bgchange linear;
-	animation-timeline: scroll();
-}
-
-@keyframes bgchange {
-	5% {
-		background-color: var(--orange);
-	}
-
-	46% {
-		background-color: var(--orange);
-	}
-
-	50% {
-		background-color: var(--black);
-	}
-
-	100% {
-		background-color: var(--black);
-	}
-
+	background-color: #FFF2CC;
 }
 
 html {
@@ -67,7 +42,7 @@ img {
 /* scrollbar*/
 
 body::-webkit-scrollbar {
-  width: 10px;               /* width of the entire scrollbar */
+  width: 7px;               /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
@@ -76,7 +51,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
 	background-color: #e69138;    /* color of the scroll thumb */
-	border-radius: 0px;       /* roundness of the scroll thumb */
+	border-radius: 20px;       /* roundness of the scroll thumb */
 	border: 0px solid rgba(20,20,20,1.00);  /* creates padding around scroll thumb */
   }
 
@@ -158,9 +133,7 @@ body::-webkit-scrollbar-thumb:hover {
 #hero{
 	height: 100vh;
 	background: rgba(20,20,20,1.00);
-	margin-bottom: 0vh;
-	animation: parallaxwarning ease-in;
-	animation-timeline: scroll();
+	margin-bottom: 35vh;
 }
 
 .background {
@@ -168,29 +141,18 @@ body::-webkit-scrollbar-thumb:hover {
 	bottom: 30vh;
 	right: 75vw;
 	height: 100vh;
-	animation: parallaxbg linear;
+	animation: parallaxbg ease-in-out;
 	animation-timeline: scroll();
 }
 
 @keyframes parallaxbg {
-	50% {
-		transform: translateY(200vh);
-	}
-}
-
-@keyframes parallaxwarning {
-	5% {
-		margin-bottom: 0vh;
-	}
-
 	30% {
-		margin-bottom: 25vh;
+		transform: translateY(130vh);
 	}
 
 	100% {
-		margin-bottom: 25vh;
+		transform: translateY(-400vh)
 	}
-
 }
 
 
@@ -250,18 +212,6 @@ body::-webkit-scrollbar-thumb:hover {
 	background-color:  rgba(20,20,20,0.9);
 	border-radius: 25px;
 	padding: 10px;
-	animation: logotransp linear;
-	animation-timeline: scroll();
-}
-
-@keyframes logotransp {
-	5% {
-		opacity: 0%;
-	}
-
-	100% {
-		opacity: 0%;
-	}
 }
 
 .logohead:hover {
@@ -370,12 +320,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 @keyframes parallaxarrow {
-	5% {
-		opacity: 0%;
-	}
-
-	100% {
-		opacity: 0%;
+	to {
+		transform: translateY(-150vh);
 	}
 }
 
@@ -400,7 +346,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .site-warning {
-	color: white;
+	color: #e69138ff;
 	font-family: Montserrat;
 	font-size: 4rem;
 	font-weight: 1000;
@@ -409,18 +355,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 .site-warning-2 {
 	color: rgb(20,20,20);
-	font-size: 1.3rem;
+	font-size: 1rem;
 	font-weight: 200;
 	z-index: 10;
 }
 
 @keyframes parallax {
-	50% {
-		transform: translateY(-120vh);
-	}
-	
-	100% {
-		transform: translateY(-150vh);
+	to {
+		transform: translateY(-900vh);
 	}
 }
 
@@ -431,17 +373,16 @@ body::-webkit-scrollbar-thumb:hover {
 /* ABOUT */
 
 #about {
-	height: 67vh;
-	background: rgb(255, 255, 255);
-	color: white;
-	padding-left: 6%;
-	padding-right: 6%;
+	height: 200vh;
+	background: rgba(20,20,20,1.00);
+	padding-left: 15%;
+	padding-right: 15%;
 	
 }
 
 .abt-s-cont {
 	position: relative;
-	top: 20vh;
+	top: 50vh;
 }
 
 .about-section-title {
@@ -451,27 +392,10 @@ body::-webkit-scrollbar-thumb:hover {
 
 .about-title {
 	position: relative;
-	font-size: 10rem;
+	font-size: 150px;
 	font-family: 'Montserrat';
 	font-weight: 1000;
-	color: var(--black);
-	opacity: 0%;
-	animation: abouttitle linear;
-	animation-timeline: scroll();
-}
-
-@keyframes abouttitle {
-	36% {
-		opacity: 0%;
-	}
-	
-	40% {
-		opacity: 100%;
-	}
-
-	100% {
-		opacity: 100%;
-	}
+	color: #e69138;
 }
 
 .about-sub {
@@ -480,21 +404,22 @@ body::-webkit-scrollbar-thumb:hover {
 	font-size: 40px;
 	font-family: 'Playfair Display';
 	font-weight: 100;
-	color: var(--orange);
+	color: #FFF2CC;
 }
 
 .about-section-1 {
 	display: flex;
+	justify-content: center;
 }
 
 .about-container-1 {
 	display: block;
-	width: 40vw;
+	width: 50vw;
 	justify-content: center;
-	top: 30px;
+	top: 100px;
 	flex-wrap: wrap;
 	text-wrap: wrap;
-	color: (#FFF2CC);
+	color: #FFF2CC;
 }
 
 .about-s-p1 {
@@ -502,33 +427,17 @@ body::-webkit-scrollbar-thumb:hover {
 	font-size: 50px;
 	font-family: 'Playfair Display';
 	font-weight: 100;
-	color: var(--black);
+	color: #ffd966;
 }
 
 .about-s-p2 {
 	position: relative;
 	top: 10px;
-	color: var(--orange);
-	font-size: 1.3rem;
-	font-weight: 300;
-	opacity: 0%;
-	animation: abouttext linear;
-	animation-timeline: scroll();
+	color: #FFF2CC;
+	font-size: 1rem;
+	font-weight: 200;
 }
 
-@keyframes abouttext {
-	42% {
-		opacity: 0%;
-	}
-	
-	46% {
-		opacity: 100%;
-	}
-
-	100% {
-		opacity: 100%;
-	}
-}
 
 
 
@@ -538,7 +447,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 #projects {
 	display: flex;
-	height: 110vh;
+	height: 100vh;
 	overflow-x: hidden;
 	background: rgba(20,20,20,1.00);
 }
@@ -548,12 +457,12 @@ body::-webkit-scrollbar-thumb:hover {
 	text-align: center;
 	left:0;
 	right:0;
-	top:10vh;
+	top:5vh;
 }
 
 .projects-title {
-	font-size: 10rem;
-	font-weight: 1000;
+	font-size: 5rem;
+	font-weight: 800;
 	color: #e69138;
 }
 
@@ -569,7 +478,6 @@ body::-webkit-scrollbar-thumb:hover {
   top: 50%;
   transform: translate(0%, -50%); 
   user-select: none; /* -- Prevent image highlighting -- */
-  margin-top: 5vh;
 }
 
 #image-track > .image {
@@ -577,7 +485,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 56vmin;
   object-fit: cover;
   object-position: 100% center;
-  border: 10px solid white;
+  border: 10px solid #FFF2CC;
 }
 
 
@@ -589,7 +497,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 footer {
 	height: 15vh;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -597,18 +504,12 @@ footer {
 }
 
 .footer-container {
-	width: 90vw;
-	display: flex;
-	justify-content: space-between;
-	text-align: center;
-	align-self: center;
-	align-content: center;
-	align-items: center;
+	justify-content: center;
 }
 
 #f {
 	font-weight: 600;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	color: rgb(20,20,20);
 	margin-bottom: 1vh;
 }
@@ -619,7 +520,7 @@ footer {
 }
 
 .icon {
-	height: 45px;
+	height: 30px;
 	transition: all 200ms ease-in-out;
 	margin: 5px;
 }
