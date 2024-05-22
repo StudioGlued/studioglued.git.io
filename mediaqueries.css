@@ -2,6 +2,8 @@
 
 	body {
 		cursor:auto;
+		animation: none linear;
+		animation-timeline: scroll();
 	}
 
 	#splash-image {
@@ -10,6 +12,18 @@
 
 	.circle {
 		display: none;
+	}
+
+
+
+	/*hero*/
+
+	#hero{
+		height: 100vh;
+		background: rgba(20,20,20,1.00);
+		margin-bottom: 7vh;
+		animation: none ease-in;
+		animation-timeline: scroll();
 	}
 	
 	.block1{
@@ -67,28 +81,83 @@
 		color: #FFF2CC;
 	}
 
+
+
+
+	/*ABOUT*/
+
+	#about {
+		height: 67vh;
+		background: rgb(255, 255, 255);
+		color: white;
+		padding-left: 6%;
+		padding-right: 6%;
+
+	}
+	
 	.about-containers {
 		flex-wrap: wrap;
+	
 	}
 
+	.abt-s-cont {
+		position: relative;
+		text-align: center;
+		top: 20vh;
+	}
+
+	.about-title {
+		font-size: 20vmin;
+		font-family: 'Montserrat';
+		font-weight: 1000;
+		color: var(--black);
+		opacity: 100%;
+		animation: none linear;
+	}
+
+	.about-container-1 {
+		display: block;
+		width: 100vw;
+
+		top: 30px;
+		flex-wrap: wrap;
+		text-wrap: wrap;
+		color: (#FFF2CC);
+	}
+
+	.about-s-p2 {
+		position: relative;
+		top: 10px;
+		color: var(--orange);
+		font-size: 1.3rem;
+		font-weight: 300;
+		opacity: 100%;
+		animation: none linear;
+	}
+
+
+	/*PROJECTS*/
+
+	.projects-title {
+		font-size: 14vmin;
+		font-weight: 1000;
+		color: var(--orange);
+		opacity: 100%;
+		animation: prjtext linear;
+		animation-timeline: scroll();
+	}
 
 		/* Img slider */
 
 	#image-track {
 		display: flex;
 		gap: 4vmin;
-		position: absolute;
-		left: 10%;
-		top: 50%;
-		transform: translate(0%, -50%); 
 		user-select: none; /* -- Prevent image highlighting -- */
 	}
 	
 	#image-track > .image {
 		width: 75vmin;
 		height: 95vmin;
-		object-fit: cover;
-		object-position: 100% center;
 	}
 
 	.work-head {
@@ -99,12 +168,25 @@
 
 
 
+	#warning {
+		display: block;
+		position: sticky;
+		text-align: center;
+		justify-content: center;
+		left: 0;
+		right: 0;
+		z-index: -100;
+		top: 0%;
+		padding-bottom: 7vh;
+		animation: none ease-in;
+		animation-timeline: scroll();
+	}
+
 	.site-warning {
-		color: #e69138ff;
 		font-family: Montserrat;
 		font-size: 4rem;
 		font-weight: 1000;
-		line-height: 2.5rem;
+		line-height: 3.5rem;
 	}
 	
 	.site-warning-2 {
