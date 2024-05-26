@@ -87,23 +87,33 @@
 	/*ABOUT*/
 
 	#about {
+		display: block;
 		height: 67vh;
 		background: rgb(255, 255, 255);
 		color: white;
 		padding-left: 6%;
 		padding-right: 6%;
-
+		justify-content: center;
+		justify-items: center;
 	}
+
+
+
+.vimeo-player {
+	width: 80vmin;
+	border-radius: 20px;
+	position: relative;
+}
+
 	
 	.about-containers {
 		flex-wrap: wrap;
-	
 	}
 
 	.abt-s-cont {
 		position: relative;
-		text-align: center;
-		top: 20vh;
+		justify-items: center;
+		justify-content: center;
 	}
 
 	.about-title {
@@ -117,9 +127,18 @@
 
 	.about-container-1 {
 		display: block;
-		width: 100vw;
+		width: 90vw;
+		top: 40px;
+		flex-wrap: wrap;
+		text-wrap: wrap;
+		color: (#FFF2CC);
+	}
 
-		top: 30px;
+	.about-container-2 {
+		display: block;
+		justify-content: center;
+		width: 90vw;
+		top: 170px;
 		flex-wrap: wrap;
 		text-wrap: wrap;
 		color: (#FFF2CC);
@@ -127,7 +146,6 @@
 
 	.about-s-p2 {
 		position: relative;
-		top: 10px;
 		color: var(--orange);
 		font-size: 1.3rem;
 		font-weight: 300;
@@ -201,6 +219,11 @@
 			transform: translateY(-1100vh);
 		}
 	}
+
+
+
+
+	/* ABOUT */
 
 
 

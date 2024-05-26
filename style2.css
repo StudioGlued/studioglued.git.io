@@ -121,6 +121,10 @@ body::-webkit-scrollbar-thumb:hover {
 	z-index: 1000000000000000;
 }
 
+.circle:hover {
+	cursor: none;
+}
+
 
 
 
@@ -340,7 +344,8 @@ body::-webkit-scrollbar-thumb:hover {
 	font-family: 'Montserrat';
 	font-weight: 1000;
 	margin: 0;
-	color: #e69138
+	color: #e69138;
+	z-index: 0;
 }
 
 .section_text_p2 {
@@ -350,7 +355,8 @@ body::-webkit-scrollbar-thumb:hover {
 	font-family: 'Montserrat';
 	font-weight: 1000;
 	margin: 0;
-	color: #e69138
+	color: #e69138;
+	z-index: 0;
 }
 
 .title {
@@ -362,6 +368,7 @@ body::-webkit-scrollbar-thumb:hover {
 	font-weight: 1000;
 	margin: 0;
 	color: #FFF2CC;
+	z-index: 1;
 }
 
 
@@ -439,20 +446,28 @@ body::-webkit-scrollbar-thumb:hover {
 /* ABOUT */
 
 #about {
-	height: 67vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	background: rgb(255, 255, 255);
 	color: white;
 	padding-left: 6%;
 	padding-right: 6%;
+	padding-top: 20vh;
+	padding-bottom: 20vh;
 }
 
 .abt-s-cont {
 	position: relative;
-	top: 20vh;
 }
 
 .about-section-title {
-	position: relative;
+	display: flex;
+	height: auto;
+	width: 40vw;
+	flex-wrap: wrap;
+	text-wrap: wrap;
+	color: (#FFF2CC);
 }
 
 .about-title {
@@ -480,24 +495,17 @@ body::-webkit-scrollbar-thumb:hover {
 	}
 }
 
-.about-sub {
-	position: relative;
-	bottom: 19px;
-	font-size: 40px;
-	font-family: 'Playfair Display';
-	font-weight: 100;
-	color: var(--orange);
-}
-
 .about-section-1 {
 	display: flex;
+	height: auto;
 }
 
 .about-container-1 {
 	display: block;
 	width: 40vw;
+	height: auto;
 	justify-content: center;
-	top: 30px;
+	top: 40px;
 	flex-wrap: wrap;
 	text-wrap: wrap;
 	color: (#FFF2CC);
@@ -505,7 +513,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .about-s-p2 {
 	position: relative;
-	top: 10px;
 	color: var(--orange);
 	font-size: 1.3rem;
 	font-weight: 300;
@@ -526,6 +533,10 @@ body::-webkit-scrollbar-thumb:hover {
 	100% {
 		opacity: 100%;
 	}
+}
+
+.vimeo-player {
+	border-radius: 20px;
 }
 
 
@@ -579,8 +590,9 @@ body::-webkit-scrollbar-thumb:hover {
 #image-track {
 	flex-wrap: wrap;
   display: flex;
-  justify-content: center;
-  gap: 4vmin; 
+  justify-content: space-between;
+  column-gap: 4vmin;
+  row-gap: 8vmin;
   user-select: none; /* -- Prevent image highlighting -- */
   margin-top: 20vh;
   margin-bottom: 20vh;
@@ -588,8 +600,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #image-track > .image {
-  width: 38vmin;
-  height: 54vmin;
+  width: 33vmin;
+  height: 47vmin;
   object-fit: cover;
   object-position: 100% center;
   border: 10px solid white;
