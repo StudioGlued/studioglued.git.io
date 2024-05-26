@@ -88,11 +88,9 @@
 
 	#about {
 		display: block;
-		height: 67vh;
 		background: rgb(255, 255, 255);
 		color: white;
-		padding-left: 6%;
-		padding-right: 6%;
+		padding: 6vw;
 		justify-content: center;
 		justify-items: center;
 	}
@@ -138,7 +136,7 @@
 		display: block;
 		justify-content: center;
 		width: 90vw;
-		top: 170px;
+		margin-top: 6vw;
 		flex-wrap: wrap;
 		text-wrap: wrap;
 		color: (#FFF2CC);
