@@ -1,0 +1,160 @@
+@media screen and (max-width: 1000px) {
+    .screen-cover {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: var(--orange);
+        pointer-events: none;
+        z-index: -10000;
+        animation: none ;
+    }
+    
+    .hero-logo-container {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding-top: 15vh;
+    }
+    
+    .hero-logo {
+        position: absolute;
+        width: 400vw;
+        left: -50vw;
+        animation: none;
+     }
+
+    .hero-text-container {
+        display: block;
+        position: relative;
+        justify-content: center;
+        justify-items: center;
+        width: 90vw;
+        height: fit-content;
+        top: -1vmin;
+     }
+    
+     .hero-text-studio {
+        font-size: 9vmin;
+        font-family: 'Playfair Display';
+        font-weight: 900;
+        top: 16.5vmin;
+        opacity: 0%;
+        animation: scrollfade ease;
+        animation-timeline: scroll();
+     }
+
+    .hero-text-glued {
+        display: flex;
+        justify-content: center;
+        color: var(--orange);
+        font-size: 31vmin;
+        font-family: 'Poppins';
+        font-weight: 900;
+     }
+
+    .hero-text-about-cont {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        top: -10vmin;
+        opacity: 0%;
+        animation: scrollfade linear;
+        animation-timeline: scroll();
+     }
+    
+     .hero-text-about {
+        font-size: 0.8rem;
+        font-family: 'Poppins';
+        font-weight: 300;
+     }
+
+
+
+
+
+
+     /*WORK*/
+
+     .featured-work-container {
+        padding: 1rem;
+     }
+
+     .featured-work-about-container {
+        display: block;
+        height: 90vh;
+        margin-bottom: 4rem;
+     }
+
+     .featured-work-keywords-container {
+        width: 100%;
+     }
+
+     .text-box-container {
+        margin-bottom: 1rem;
+     }
+
+     .text-box-text-1 {
+        font-size: 1.4rem;
+     }
+    
+     .text-box-text-2 {
+        font-size: 1.4rem;
+     }
+
+     .reel-container {
+        height: 50%;
+        width: 100%;
+     }
+
+    .work-container {
+        flex-direction: column;
+        gap: 0;
+        row-gap: 4.5vmin;
+        margin-bottom: 0;
+    }
+
+    .work-title {
+        top: -5vh;
+        left: 0;
+    }
+
+   
+
+    /* GALLERY */
+
+    .gallery {
+      display: none;
+    }
+
+
+
+
+
+    /* Footer */
+
+   .footer-container{
+      display: flex;
+      flex-wrap: wrap;
+      height: 70vh;
+      width: 100%;
+      background-color: black;
+      overflow: hidden;
+      padding:1rem;
+      padding-bottom: 3rem;
+      align-content: flex-end;
+   }
+
+   .footer-title {
+      font-size: 5rem;
+      font-weight: 900;
+      color: white;
+      height: fit-content;
+   }
+
+
+}
