@@ -1,13 +1,26 @@
 @media screen and (max-width: 1000px) {
-    .screen-cover {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        background-color: var(--orange);
-        pointer-events: none;
-        z-index: -10000;
-        animation: none ;
-    }
+      .header-bg {
+         animation: none;
+         animation-timeline: none;
+   }
+
+   .header-leftside-text-container {
+      color: white;
+      animation: none;
+      animation-timeline: none;
+  }
+
+  .header-rightside-text-container {
+   animation: none;
+   animation-timeline: none;
+   
+}
+
+
+
+
+
+
     
     .hero-logo-container {
         position: absolute;
