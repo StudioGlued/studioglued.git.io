@@ -1,134 +1,27 @@
 @media screen and (max-width: 1000px) {
 
-   body {
-      background-color: black;
-  }
 
-
-   @keyframes scrollfade {
-  }
-  
-  @keyframes scrollcolour {
-  }
-
-
-  .header {
+   .header {
       background-color: black;
    }
 
    .header-bg {
       display: none;
-      animation: none;
-      animation-timeline: none;
+   }
+   
+   .hero-main-container {
+      padding-inline: 1rem;
    }
 
-   .header-leftside-text-container {
-      color: white;
-      animation: none;
-      animation-timeline: none;
-   }
-
-   .header-rightside-text-container {
-      animation: none;
-      animation-timeline: none;
-   }
-
-
-
-
-
-
-    
-   .hero-logo-container {
-      position: absolute;
-      height: 100vh;
-      width: 100%;
-      overflow: hidden;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      padding-top: 15vh;
-    }
-    
-   .hero-logo {
-      position: absolute;
-      width: 400vw;
-      left: -55vw;
-      animation: none;
-   }
-
-   .hero-text-container {
-      display: block;
-      position: relative;
-      justify-content: center;
-      justify-items: center;
-      width: 90vw;
-      height: fit-content;
-      top: -1vmin;
-   }
-    
-   .hero-text-studio {
-      font-size: 9vmin;
-      font-family: 'Playfair Display';
-      font-weight: 900;
-      top: 16.5vmin;
-      opacity: 100%;
-      animation: none;
-      animation-timeline: none;
-   }
-
-   .hero-text-glued {
-      display: flex;
-      justify-content: center;
-      color: var(--orange);
-      font-size: 31vmin;
-      font-family: 'Poppins';
-      font-weight: 900;
-   }
-
-   .hero-text-about-cont {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      width: 100%;
-      top: -10vmin;
-      opacity: 100%;
-      animation: none;
-      animation-timeline: none;
-   }
-    
-   .hero-text-about {
-      font-size: 0.8rem;
-      font-family: 'Poppins';
-      font-weight: 300;
-   }
-
-
-
-
-
-
-   /*WORK*/
-
-   .featured-work-container {
+   .info-main-container {
       padding: 1rem;
    }
-
-   .featured-work-about-container {
-      display: block;
-      height: 90vh;
-      margin-bottom: 4rem;
-   }
-
-   .featured-work-keywords-container {
-      width: 100%;
-   }
-
-   .text-box-container {
-      margin-bottom: 1rem;
-   }
-
+   
    .text-box-text-1 {
+      font-size: 1.4rem;
+   }
+
+   .text-box-text-1-credits {
       font-size: 1.4rem;
    }
    
@@ -136,38 +29,99 @@
       font-size: 1.4rem;
    }
 
-   .reel-container {
-      height: 50%;
+   .project-info {
+      flex-direction: column;
+   }
+
+   .title-box-text {
+      font-size: 3rem;
+      text-wrap: wrap;
+      width: auto;
+   }
+
+   .title-icon-small {
+      margin-right: 0;
+   }
+
+   .description-tags {
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+   }
+
+   .text-box-text-1-description {
+      font-size: 1.4rem;
+      margin-right: 0;
+   }
+
+   .main-description {
+      flex-direction: column;
+   }
+
+   .description-text {
+      margin-left: 0;
+      padding-right: 0;
+   }
+
+   .credits-main-container {
+      padding: 0;
+      padding-top: 3rem;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .credits-container {
+      padding-inline: 1rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+   }
+
+
+
+
+   .view-project {
+      height: 15vh;
+   }
+   
+
+
+
+
+
+   .featured-work-container {
+      padding: 1rem;
+   }
+
+   .featured-work-about-container {
+      flex-direction: column;
+      height: 60vh;
+   }
+
+   .featured-work-keywords-container {
       width: 100%;
    }
 
-   .work-container {
-      flex-direction: column;
-      gap: 0;
-      row-gap: 4.5vmin;
-      margin-bottom: 0;
+   .featured-work-keywords {
+      font-size: 3.5rem;
+      text-align: right;
    }
 
-   .work-title {
-      top: -5vh;
-      left: 0;
-    }
+   .text-box-text-reel {
+      font-size: 1.4rem;
+   }
 
-   
-
-   /* GALLERY */
-
-   .gallery {
-      display: none;
+   .reel-container {
+      width: 100%;
+      height: 100%;
    }
 
 
+    /* Footer */
 
-
-
-   /* Footer */
-
-   .footer-container{
+    .footer-container{
       display: flex;
       flex-wrap: wrap;
       height: 70vh;
@@ -190,7 +144,4 @@
    .footer-details-container {
       margin-right: 0;
   }
-
-
-
 }
