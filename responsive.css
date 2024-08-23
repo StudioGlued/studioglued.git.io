@@ -1,8 +1,8 @@
 @media screen and (max-width: 1000px) {
 
    body {
-    background-color: black;
-}
+      background-color: black;
+  }
 
 
    @keyframes scrollfade {
@@ -53,7 +53,7 @@
    .hero-logo {
       position: absolute;
       width: 400vw;
-      left: -50vw;
+      left: -55vw;
       animation: none;
    }
 
