@@ -34,7 +34,23 @@
 
 
 
-
+   .hero {
+      height: 100vh;
+      background-color: var(--orange);
+   }
+  
+  .hero-main-container {
+      height: 100vh;
+      width: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+   }
+  
     
    .hero-logo-container {
       position: absolute;
