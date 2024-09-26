@@ -552,7 +552,7 @@ img {
 
  .featured-work-about-container {
     display: flex;
-    height: 45vh;
+    height: 60vh;
     width: 100%;
     gap: 2vmin;
     align-content: center;
