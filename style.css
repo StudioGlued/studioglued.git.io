@@ -59,7 +59,7 @@ section {
 		opacity: 0%;
         transform: translateY(-2vh);
 	}
-    4% {
+    1% {
 		opacity: 100%;
         transform: translateY(0vh);
 	}
@@ -74,7 +74,7 @@ section {
 		color: black;
 	}
 
-    4% {
+    1% {
 		color: white;
 	}
     100% {
@@ -284,7 +284,7 @@ section {
  }
 
  .hero-text-about {
-    width: 50vmax;
+    /*width: 50vmax;*/
     text-align: center;
     color: white;
     font-size: 0.85vmax;
