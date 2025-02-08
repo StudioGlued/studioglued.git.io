@@ -445,7 +445,8 @@ section {
  }
  
  .reel-container {
-    height: 100%;
+    display: flex;
+    justify-content: center;
     width: 50%;
  }
  .reel {
