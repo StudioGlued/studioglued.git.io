@@ -17,30 +17,4 @@ window.addEventListener("scroll", () => {
         })
     })
 
-    const videos = document.querySelectorAll('.videohover');
-
-videos.forEach(video => {
-  video.addEventListener('mouseenter', () => {
-    video.play();
-  });
-  
-  video.addEventListener('mouseleave', () => {
-    video.pause();
-    video.currentTime = 0;
-  });
-});
-
-const videos2 = document.querySelectorAll('.showreelhover');
-
-videos2.forEach(video => {
-  video.addEventListener('mouseenter', () => {
-    video.currentTime = 2;
-    video.volume = 0.05;
-    video.play();
-  });
-  
-  video.addEventListener('mouseleave', () => {
-    video.pause();
-    video.currentTime = 0;
-  });
-});
+    
