@@ -1,0 +1,369 @@
+/* Styles for GluedStudio About Page */
+
+/* Font Import - Copied from original style.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* BASICS - Copied/Adapted from original style.css */
+html {
+    width: 100%;
+    overscroll-behavior: contain;
+    scroll-padding-top: 2.5rem; /* Offset scroll position for fixed header */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add box-sizing */
+    /* Color Variables - Copied from original style.css */
+    --orange: #FF6C00;
+    --blue: #235281;
+    --cream: #fff2cc;
+    --black: #141414;
+    --grey: #8a8a8a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Default font */
+    font-weight: 300;
+    background-color: var(--orange); /* Set default background to ORANGE */
+    padding-top: 2.5rem; /* Add padding to prevent content hiding under fixed header */
+}
+
+section {
+    margin: 0;
+    padding: 0; 
+}
+
+/* Scroll Animation Base - Copied from original style.css */
+.scroll-in {
+    transform: translateY(5vh);
+    opacity: 0%;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.scroll-in:nth-of-type(even) {
+    transition-delay: 0.2s;
+}
+
+.scroll-in.show {
+    transform: translateY(0);
+    opacity: 100%;
+}
+
+/* Header Styles - Copied/Adapted from original style.css */
+.header {
+    position: fixed; /* Keep header fixed */
+    top: 0; /* Stick to top */
+    left: 0;
+    height: 2.5rem;
+    width: 100%;
+    z-index: 1000; /* Ensure header is on top */
+    background-color: transparent; /* Start transparent */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Style header when scrolled (requires JS to add 'scrolled' class to body or header) */
+ body.scrolled .header { 
+    background-color: var(--black); 
+ }
+
+/* Header BG element - Not needed if header itself changes color */
+ .header-bg { display: none; } 
+
+
+.header-text-container {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 2vmin;
+    align-items: center;
+    position: relative; 
+    height: 100%; 
+}
+
+.header-leftside-text-container {
+    display: flex;
+    color: var(--black); /* Default color on orange page */
+    font-size: 1rem;
+    cursor: pointer; /* Make logo clickable */
+    transition: color 0.3s ease; 
+}
+body.scrolled .header-leftside-text-container {
+    color: white; 
+}
+
+.header-leftside-text-container:hover {
+   /* Hover color depends on scroll state */
+}
+body:not(.scrolled) .header-leftside-text-container:hover {
+    color: var(--black); 
+}
+body.scrolled .header-leftside-text-container:hover {
+    color: var(--orange);
+}
+
+.glued-header {
+    font-family: 'Poppins';
+    font-weight: 900;
+}
+
+.studio-header {
+    font-family: 'Playfair Display';
+    font-weight: 900;
+}
+
+.header-rightside-text-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 2vmin; /* Add gap between items */
+    color: var(--black); /* Default color on orange page */
+    font-size: 0.8rem;
+    font-weight: 200;
+    transition: color 0.3s ease; 
+}
+ body.scrolled .header-rightside-text-container {
+    color: white; 
+ }
+
+.text-header-right {
+    /* margin-right: 2vmin; /* Replaced by gap */
+    opacity: 70%; 
+    transition: 150ms all;
+    transition-timing-function: ease-in-out;
+    cursor: pointer; /* Make links clickable */
+}
+
+.text-header-right:hover {
+   /* Hover color depends on scroll state */
+    opacity: 100%;
+    font-weight: 900;
+}
+body:not(.scrolled) .text-header-right:hover {
+    color: var(--black);
+}
+body.scrolled .text-header-right:hover {
+    color: var(--orange);
+}
+
+/* Style for the active page link using class */
+body:not(.scrolled) .text-header-right.active { 
+     opacity: 100%; 
+     font-weight: 900; 
+     color: var(--black); 
+}
+body.scrolled .text-header-right.active {
+    opacity: 100%; 
+    font-weight: 900; 
+    color: var(--orange); 
+}
+
+.header-button {
+    width: auto; /* Adjust width automatically */
+    padding: 0.2rem 0.8rem; /* Adjust padding */
+    background-color: var(--black); 
+    border: solid 2px var(--black);
+    border-radius: 30px;
+    text-align: center;
+    opacity: 100%;
+    color: var(--orange); 
+    height: fit-content; 
+    align-self: center; 
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer; /* Make button clickable */
+    font-weight: 400; /* Adjust font weight */
+    font-size: 0.75rem; /* Adjust font size */
+}
+body.scrolled .header-button {
+    background-color: var(--orange);
+    border-color: var(--orange);
+    color: black;
+}
+
+.header-button:hover {
+    /* Hover color depends on scroll */
+     cursor: not-allowed; /* Keep original behavior? */
+}
+ body:not(.scrolled) .header-button:hover {
+    background-color: #333; 
+    border-color: #333;
+    color: var(--orange);
+}
+body.scrolled .header-button:hover {
+    background-color: #ff8c00; 
+    border-color: #ff8c00;
+    color: black;
+}
+
+
+/* About Page Specific Content Styles */
+.about-content {
+    /* Background is inherited from body (orange) */
+    padding: 3rem 3rem; /* Reduced top padding because body has padding */
+    color: var(--black); 
+    min-height: 50vh; /* Adjust min-height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.about-main-container {
+    max-width: 900px; 
+    width: 100%;
+    text-align: center; 
+    background-color: transparent; 
+    padding-top: 2rem; 
+}
+
+.about-main-container h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 900;
+    font-size: 3.5rem; 
+    color: var(--black); 
+    margin-bottom: 2.5rem;
+}
+
+.about-text-container {
+    text-align: left; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem; 
+    line-height: 1.8;
+    color: var(--black); 
+}
+
+.about-text-container p {
+    margin-bottom: 1.5rem; 
+}
+
+.about-image-container {
+    margin: 2.5rem 0; 
+    text-align: center;
+}
+
+.about-image-container img {
+    max-width: 60%; 
+    height: auto;
+    display: block; 
+    margin: 0 auto 0.5rem auto; 
+    border: 4px solid var(--black); 
+    border-radius: 5px; 
+}
+
+.about-image-container .caption {
+     font-size: 0.9rem;
+     color: #333; 
+     font-style: italic;
+     margin: 0;
+}
+
+/* Footer Styles - Copied from original style.css */
+.footer {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    z-index: 10; 
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 70vh; 
+    width: 100%;
+    background-color: black; 
+    overflow: hidden;
+    padding: 2rem;
+    align-content: flex-end;
+}
+
+.footer-main-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-title-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: last baseline;
+}
+
+.footer-title {
+    font-size: 16vw;
+    font-weight: 900;
+    color: white; 
+    padding-left: 2rem;
+    width: fit-content;
+    height: 20vw;
+}
+
+.footer-details-container {
+    display: flex;
+    width: 50%;
+    margin: 2rem;
+    margin-right: 2rem;
+    text-align: right;
+    justify-items: right;
+    justify-content: right;
+    align-items: last baseline;
+}
+
+.footer-text-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: right;
+}
+
+.footer-details-line-1 {
+    font-size: 1rem;
+    font-weight: 200;
+    color: white; 
+    text-align: right;
+    transition-duration: 200ms;
+}
+
+.footer-details-line-1:hover {
+    font-weight: 900;
+    cursor: pointer;
+    color: var(--orange); 
+}
+
+.footer-second-container {
+    width: 100%;
+    display: flex;
+    margin-top: auto; /* Push to bottom */
+}
+
+.footer-second-text-container-1 {
+    width: 100%;
+    display: flex;
+    height: auto; /* Adjust height */
+    justify-content: space-between;
+    align-items: last baseline;
+    align-content: last baseline;
+}
+
+.footer-tags-gif {
+    width: 4rem;
+}
+
+.footer-second-text-container-2 {
+    width: 50%;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.footer-tags-line-2 {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: var(--orange); 
+    width: fit-content;
+    height: fit-content;
+}
