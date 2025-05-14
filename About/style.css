@@ -117,7 +117,6 @@ body.scrolled .header-leftside-text-container:hover {
 .header-rightside-text-container {
     display: flex;
     align-items: center; /* Align items vertically */
-    gap: 2vmin; /* Add gap between items */
     color: var(--black); /* Default color on orange page */
     font-size: 0.8rem;
     font-weight: 200;
@@ -133,6 +132,7 @@ body.scrolled .header-leftside-text-container:hover {
     transition: 150ms all;
     transition-timing-function: ease-in-out;
     cursor: pointer; /* Make links clickable */
+    margin-right: 2vmin;
 }
 
 .text-header-right:hover {
@@ -225,7 +225,7 @@ body.scrolled .header-button:hover {
 }
 
 .about-text-container {
-    text-align: left; 
+    text-align: center; 
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 1.1rem; 
