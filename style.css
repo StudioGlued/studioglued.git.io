@@ -59,7 +59,7 @@ section {
 		opacity: 0%;
         transform: translateY(-2vh);
 	}
-    1% {
+    0.7% {
 		opacity: 100%;
         transform: translateY(0vh);
 	}
@@ -203,7 +203,7 @@ section {
 
 
 .hero {
-    height: 135vh;
+    height: 125vh;
     background-color: var(--orange);
 }
 

@@ -258,6 +258,90 @@ body.scrolled .header-button:hover {
      margin: 0;
 }
 
+
+
+
+ /* DIVIDER */
+
+
+ .divider-section {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    padding-block: 3rem;
+    align-content: center;
+    z-index: 10000;
+ }
+
+ @keyframes dividerslider {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+ }
+
+ .divider-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 10000;
+    overflow-x: hidden;
+ }
+
+.divider-text-containers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+}
+
+.text-slider{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    animation: 20s dividerslider infinite linear;
+}
+
+.text-slider:hover {
+    cursor: pointer;
+}
+
+.divider-text-1 {
+    color: white;
+    font-weight: 300;
+    font-size: 2.3rem;
+    margin-right: 1rem;
+    margin-left: 2.5rem;
+    text-wrap: nowrap;
+}
+
+ .text-box-text-1 {
+    font-size: 2rem;
+    font-family: 'Poppins';
+    font-weight: 900;
+    line-height: 99%;
+    color: black;
+    max-width: 90%;
+    height: fit-content;
+    width: fit-content;
+    text-align: right;
+    background-color: var(--orange);
+    padding-inline: 0.4rem;
+    padding-block: 0.2rem;
+    transition: 150ms all;
+    transition-timing-function: ease-in-out;
+    text-wrap: wrap;
+ }
+
+
+
+
+
 /* Footer Styles - Copied from original style.css */
 .footer {
     position: relative;
