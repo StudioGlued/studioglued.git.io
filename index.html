@@ -2,12 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>GluedStudio</title>
+    <title>Glued Studio – Emotion-Driven Motion & Brand Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="description" content="Glued Studio creates emotionally driven motion, brand, and campaign design. From bold visuals to cheeky ideas, we craft memorable digital experiences that stick." />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <!-- Theme Color for mobile browsers -->
     <meta name="theme-color" content="#FF6600">
 
     <!-- Open Graph / Facebook -->
@@ -16,47 +14,56 @@
     <meta property="og:title" content="Glued Studio – Emotion-Driven Motion & Brand Design">
     <meta property="og:description" content="Glued Studio crafts emotionally compelling brand and campaign designs through motion, storytelling, and strategy.">
     <meta property="og:image" content="https://glued.studio/assets/2x/glued-bubble-orange.png">
-    
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://glued.studio/">
+    <meta name="twitter:title" content="Glued Studio – Emotion-Driven Motion & Brand Design">
+    <meta name="twitter:description" content="Glued Studio crafts emotionally compelling brand and campaign designs through motion, storytelling, and strategy.">
+    <meta name="twitter:image" content="https://glued.studio/assets/2x/glued-bubble-orange.png">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="assets/4x/Asset 1@4x.png">
   </head>
   <body>
-    <section class="header">
-        <div class="header-text-container">
-            <div class="header-leftside-text-container" onclick="location.href='./'">
-                <p class="glued-header">Glued</p>
-                <p class="studio-header">Studio</p>
-            </div>
-            <div class="header-rightside-text-container">
-                <p class="text-header-right" onclick="location.href='./About/'">About</p>
-                <p class="text-header-right" onclick="window.location.href='mailto:reiss@glued.studio?subject=Got%20an%20idea%20–%20let’s%20chat&body=Hey%20Reiss,'">Contact</p>
-                <p class="text-header-right header-button">Hire</p>
-            </div>
+    <header class="header">
+      <div class="header-text-container">
+        <div class="header-leftside-text-container" onclick="location.href='./'">
+          <h1 class="glued-header">Glued <span class="studio-header">Studio</span></h1>
         </div>
-        <div class="header-bg"></div>
-    </section>
-    <section class="hero">
+        <nav class="header-rightside-text-container" aria-label="Main navigation">
+          <a href="./About/" class="text-header-right">About</a>
+          <a href="mailto:reiss@glued.studio?subject=Got%20an%20idea%20–%20let’s%20chat&body=Hey%20Reiss," class="text-header-right">Contact</a>
+          <a href="./hire" class="text-header-right header-button">Hire</a>
+        </nav>
+      </div>
+      <div class="header-bg"></div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-main-container">
-            <div class="hero-logo-container">
-                <img class="hero-logo" src="./assets/1x/gluedblack.png">
+          <div class="hero-logo-container">
+            <img class="hero-logo" src="./assets/1x/gluedblack.png" alt="Glued Studio Logo">
+          </div>
+          <div class="hero-text-container">
+            <h2 id="hero-title" class="visually-hidden">Welcome to Glued Studio</h2>
+            <div class="hero-text-studio">
+              <h3>Studio</h3>
             </div>
-            <div class="hero-text-container">
-                <div class="hero-text-studio">
-                    <p>Studio</p>
-                </div>
-                <div class="hero-text-glued">
-                    <p>Glued</p>
-                </div>
-                <div class="hero-text-about-cont">
-                    <div style="display: flex;">
-                        <p class="hero-text-about" style="text-decoration: line-through;"></p>
-                        <p class="hero-text-about">D&AD Newblood Winner 2025</p>
-                    </div>
-                </div>
+            <div class="hero-text-glued">
+              <h3>Glued</h3>
             </div>
+            <div class="hero-text-about-cont">
+              <div style="display: flex;">
+                <span class="hero-text-about" style="text-decoration: line-through;" aria-hidden="true"></span>
+                <h4 class="hero-text-about">Reiss | D&amp;AD Newblood Winner 2025</h4>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
     <section class="divider-section">
         <div class="divider-container">
@@ -416,35 +423,37 @@
             <hr style="width:300%;size:1px;text-align:left;margin-left:0;margin-block:0.2rem;">
         </div>
     </section>
+    </main>
 
-    <section class="footer">
-        <div class="footer-container">
-            <div class="footer-main-container scroll-in">
-                <div class="footer-title-container">
-                    <p class="footer-title">Glued</p>
-                </div>
-                <div class="footer-details-container">
-                    <div class="footer-text-container">
-                        <p class="footer-details-line-1" onclick="location.href='./About/'">About</p>
-                        <p class="footer-details-line-1" onclick="window.location.href='mailto:reiss@glued.studio?subject=Got%20an%20idea%20–%20let’s%20chat&body=Hey%20Reiss,'">Contact</p>
-                        <p class="footer-details-line-1" onClick="window.open('https://www.instagram.com/gluedstudio/')">Instagram</p>
-                        <p class="footer-details-line-1" onClick="window.open('https://www.linkedin.com/in/reiss-badhasha/')">LinkedIn</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-second-container">
-                <div class="footer-second-text-container-1">
-                    <div class="footer-gif-container">
-                        <img class="footer-tags-gif" src="assets/Glued Morph GIF.gif" >
-                    </div>
-                    <div class="footer-second-text-container-2">
-                        <p class="footer-tags-line-2">Website built by Me!</p>
-                        <p class="footer-tags-line-2">GluedStudio // 2025</p>
-                    </div>
-                </div>
-            </div>
+    <footer class="footer" aria-labelledby="footer-title">
+      <div class="footer-container">
+        <div class="footer-main-container scroll-in">
+          <div class="footer-title-container">
+            <h2 id="footer-title" class="footer-title">Glued</h2>
+          </div>
+          <div class="footer-details-container">
+            <nav class="footer-text-container" aria-label="Footer navigation">
+              <a href="./About/" class="footer-details-line-1">About</a>
+              <a href="mailto:reiss@glued.studio?subject=Got%20an%20idea%20–%20let’s%20chat&body=Hey%20Reiss," class="footer-details-line-1">Contact</a>
+              <a href="https://www.instagram.com/gluedstudio/" class="footer-details-line-1">Instagram</a>
+              <a href="https://www.linkedin.com/in/reiss-badhasha/" class="footer-details-line-1">LinkedIn</a>
+            </nav>
+          </div>
         </div>
-    </section>
-	<script src="script.js"></script>
+        <div class="footer-second-container">
+          <div class="footer-second-text-container-1">
+            <div class="footer-gif-container">
+              <img class="footer-tags-gif" src="assets/Glued Morph GIF.gif" alt="Animated tag gif">
+            </div>
+            <div class="footer-second-text-container-2">
+              <p class="footer-tags-line-2">Website built by Me!</p>
+              <p class="footer-tags-line-2">GluedStudio // 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
