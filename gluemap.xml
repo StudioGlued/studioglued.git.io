@@ -6,32 +6,32 @@
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://glued.studio/About</loc>
+    <loc>https://glued.studio/about/</loc>
     <lastmod>2025-05-25</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://glued.studio/Projects/Xbox-D&AD</loc>
+    <loc>https://glued.studio/projects/xbox-dandad/</loc>
     <lastmod>2025-05-25</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://glued.studio/Fedrigoni</loc>
+    <loc>https://glued.studio/projects/fedrigoni/</loc>
     <lastmod>2025-05-25</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://glued.studio/Plucked</loc>
+    <loc>https://glued.studio/projects/plucked/</loc>
     <lastmod>2025-05-25</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://glued.studio/V60s</loc>
+    <loc>https://glued.studio/projects/v60s/</loc>
     <lastmod>2025-05-25</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
-    <loc>https://glued.studio/Kelloggs</loc>
+    <loc>https://glued.studio/projects/kelloggs/</loc>
     <lastmod>2025-05-25</lastmod>
     <priority>0.64</priority>
   </url>
