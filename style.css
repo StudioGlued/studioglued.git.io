@@ -591,21 +591,37 @@ section {
     position: relative; /* Needed if you position the image absolutely */
 }
 
+.box-container video {
+    width: 100%; /* Make image try to fill container width initially */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area, potentially cropping */
+    opacity: 0.2; /* Initially hide the image */
+    transition: opacity 0.2s ease; /* Transition for the image fade */
+    max-width: 1000%; /* Allow image to be 'larger' than the narrow initial state */
+                       /* Adjust as needed depending on desired effect */
+}
+
 .box-container img {
     width: 100%; /* Make image try to fill container width initially */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Maintain aspect ratio */
     object-fit: cover; /* Cover the area, potentially cropping */
-    opacity: 0; /* Initially hide the image */
+    opacity: 0.2; /* Initially hide the image */
     transition: opacity 0.2s ease; /* Transition for the image fade */
     max-width: 1000%; /* Allow image to be 'larger' than the narrow initial state */
                        /* Adjust as needed depending on desired effect */
 }
 
 .box-container:hover {
-    background-color: var(--orange); /* Keep existing hover background */
+    background-color: white; /* Keep existing hover background */
     height: 22vw;
-    width: 20vw;
+    width: 30vw;
     border-radius: 5rem;
+}
+
+.box-container:hover video {
+    opacity: 1; /* Show image on hover */
+    width: 100%; /* Ensure image fits the expanded container */
+    height: 100%;
 }
 
 .box-container:hover img {
@@ -613,7 +629,6 @@ section {
     width: 100%; /* Ensure image fits the expanded container */
     height: 100%;
 }
-
 
 
 
