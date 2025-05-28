@@ -10,9 +10,11 @@ window.addEventListener("scroll", () => {
             box.classList.add("show")
         } 
         
+        /*
         else {
             box.classList.remove("show")
         }
+        */
 
         })
     })
