@@ -1,20 +1,22 @@
-/* Styles for GluedStudio About Page */
-
-/* Font Import - Copied from original style.css */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* BASICS - Copied/Adapted from original style.css */
+
+
+
+
+
+/* BASICS */
+
+
+
 html {
     width: 100%;
     overscroll-behavior: contain;
-    scroll-padding-top: 2.5rem; /* Offset scroll position for fixed header */
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Add box-sizing */
-    /* Color Variables - Copied from original style.css */
     --orange: #FF6C00;
     --blue: #235281;
     --cream: #fff2cc;
@@ -25,10 +27,10 @@ html {
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif; /* Default font */
+    font-family: 'Playfair Display', serif;
+	font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    background-color: var(--orange); /* Set default background to ORANGE */
-    padding-top: 2.5rem; /* Add padding to prevent content hiding under fixed header */
+    background-color: var(--orange);
 }
 
 section {
@@ -36,9 +38,8 @@ section {
     padding: 0; 
 }
 
-/* Scroll Animation Base - Copied from original style.css */
 .scroll-in {
-    transform: translateY(5vh);
+    transform: translateY(2vh);
     opacity: 0%;
     transition: 0.5s;
     transition-timing-function: ease-out;
@@ -53,148 +54,133 @@ section {
     opacity: 100%;
 }
 
-/* Header Styles - Copied/Adapted from original style.css */
-.header {
-    position: fixed; /* Keep header fixed */
-    top: 0; /* Stick to top */
-    left: 0;
-    height: 2.5rem;
-    width: 100%;
-    z-index: 1000; /* Ensure header is on top */
-    background-color: transparent; /* Start transparent */
-    transition: background-color 0.3s ease; /* Smooth transition */
+@keyframes scrollfade {
+    0% {
+		opacity: 0%;
+        transform: translateY(-2vh);
+	}
+    4% {
+		opacity: 100%;
+        transform: translateY(0vh);
+	}
+    100% {
+		opacity: 100%;
+        transform: translateY(0vh);
+	}
 }
 
-/* Style header when scrolled (requires JS to add 'scrolled' class to body or header) */
- body.scrolled .header { 
-    background-color: var(--black); 
- }
+@keyframes scrollcolour {
+    0% {
+		color: black;
+	}
 
-/* Header BG element - Not needed if header itself changes color */
- .header-bg { display: none; } 
+    4% {
+		color: white;
+	}
+    100% {
+		color: white;
+	}
+}
 
+    /* HEADER */
+
+
+
+.header {
+    position: fixed;
+    height: 2.5rem;
+    width: 100%;
+    z-index: 100000000;
+    background-color: transparent;
+    align-content: center;
+}
+
+.header-bg {
+    position: fixed;
+    top: 0;
+    height: 2.5rem;
+    width: 100%;
+    background-color: black;
+    z-index: 1000000;
+}
 
 .header-text-container {
     display: flex;
     justify-content: space-between;
     margin-inline: 2vmin;
+    z-index: 9000000;
     align-items: center;
-    position: relative; 
-    height: 100%; 
 }
 
 .header-leftside-text-container {
     display: flex;
-    color: var(--black); /* Default color on orange page */
+    color: white;
     font-size: 1rem;
-    cursor: pointer; /* Make logo clickable */
-    transition: color 0.3s ease; 
-}
-body.scrolled .header-leftside-text-container {
-    color: white; 
+    cursor: default;
+    z-index: 9000000;
 }
 
 .header-leftside-text-container:hover {
-   /* Hover color depends on scroll state */
-}
-body:not(.scrolled) .header-leftside-text-container:hover {
-    color: var(--black); 
-}
-body.scrolled .header-leftside-text-container:hover {
-    color: var(--orange);
+    cursor: pointer;
 }
 
 .glued-header {
     font-family: 'Poppins';
     font-weight: 900;
+    z-index: 9000000;
 }
 
 .studio-header {
     font-family: 'Playfair Display';
     font-weight: 900;
+    z-index: 9000000;
+}
+
+.header-leftside-text-container:hover {
+    color: var(--orange);
 }
 
 .header-rightside-text-container {
     display: flex;
-    align-items: center; /* Align items vertically */
-    color: var(--black); /* Default color on orange page */
+    color: white;
     font-size: 0.8rem;
     font-weight: 200;
-    transition: color 0.3s ease; 
+    z-index: 9000000;
+    
 }
- body.scrolled .header-rightside-text-container {
-    color: white; 
- }
 
 .text-header-right {
-    /* margin-right: 2vmin; /* Replaced by gap */
-    opacity: 70%; 
+    margin-right: 2vmin;
+    opacity: 50%;
+    z-index: 9000000;
     transition: 150ms all;
     transition-timing-function: ease-in-out;
-    cursor: pointer; /* Make links clickable */
-    margin-right: 2vmin;
 }
 
 .text-header-right:hover {
-   /* Hover color depends on scroll state */
+    margin-right: 2vmin;
     opacity: 100%;
-    font-weight: 900;
-}
-body:not(.scrolled) .text-header-right:hover {
-    color: var(--black);
-}
-body.scrolled .text-header-right:hover {
     color: var(--orange);
-}
-
-/* Style for the active page link using class */
-body:not(.scrolled) .text-header-right.active { 
-     opacity: 100%; 
-     font-weight: 900; 
-     color: var(--black); 
-}
-body.scrolled .text-header-right.active {
-    opacity: 100%; 
-    font-weight: 900; 
-    color: var(--orange); 
+    cursor: pointer;
+    font-weight: 900;
 }
 
 .header-button {
-    width: auto; /* Adjust width automatically */
-    padding: 0.2rem 0.8rem; /* Adjust padding */
-    background-color: var(--black); 
-    border: solid 2px var(--black);
+    width: 2.2rem;
+    background-color: var(--orange);
+    border: solid 2px var(--orange);
     border-radius: 30px;
     text-align: center;
     opacity: 100%;
-    color: var(--orange); 
-    height: fit-content; 
-    align-self: center; 
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-    cursor: pointer; /* Make button clickable */
-    font-weight: 400; /* Adjust font weight */
-    font-size: 0.75rem; /* Adjust font size */
-}
-body.scrolled .header-button {
-    background-color: var(--orange);
-    border-color: var(--orange);
     color: black;
 }
 
 .header-button:hover {
-    /* Hover color depends on scroll */
-     cursor: not-allowed; /* Keep original behavior? */
+    color: white;
+    width: 3rem;
+    cursor: not-allowed;
 }
- body:not(.scrolled) .header-button:hover {
-    background-color: #333; 
-    border-color: #333;
-    color: var(--orange);
-}
-body.scrolled .header-button:hover {
-    background-color: #ff8c00; 
-    border-color: #ff8c00;
-    color: black;
-}
+
 
 
 /* About Page Specific Content Styles */
@@ -247,8 +233,6 @@ body.scrolled .header-button:hover {
     height: auto;
     display: block; 
     margin: 0 auto 0.5rem auto; 
-    border: 4px solid var(--black); 
-    border-radius: 5px; 
 }
 
 .about-image-container .caption {
